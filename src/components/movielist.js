@@ -4,8 +4,12 @@ const MovieList = (props)=>{
     return(
         <>
             {props.movies.map((movie, index)=> <div className="movies">
-                <img src={movie.posterURL} alt="Movie" className="moviecard"></img>
-                </div>)}
+            <div>
+        <img src={movie.posterURL} alt={movie.title} className="moviecard" />
+        <p styles={"display:flex;"}>{movie.title}</p>
+      </div> 
+            </div>
+                )}
 
         </>
     )

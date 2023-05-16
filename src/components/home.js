@@ -1,10 +1,8 @@
-import './App.css';
+import '../App.css';
 import React,{useState} from 'react';
 import RatingStars from 'react-rating-stars-component';
-import MovieList from './components/movielist';
-import { Routes,Route} from 'react-router-dom';
-import MoviePage from './moviepage';
-function App() {
+import MovieList from './movielist';
+function Home() {
   const [rate, setRating] = useState(1)
   const handleRating = (numbre) => {
     setRating(numbre)
@@ -140,8 +138,9 @@ function App() {
         </button>
       </form>
     </div>
+
     </div>
   );
 }
 
-export default App;
+export default Home;
